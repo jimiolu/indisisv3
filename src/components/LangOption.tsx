@@ -35,7 +35,7 @@ const LangOption = () => {
     <div className="relative font-manrope" ref={dropdownRef}>
       <button
         onClick={toggleDropdown}
-        className="flex items-center font-medium gap-1 transition cursor-pointer text-basecolor"
+        className="flex items-center font-medium gap-1 transition cursor-pointer"
       >
         <Globe size={18} />
         <span>{selected.country}</span>

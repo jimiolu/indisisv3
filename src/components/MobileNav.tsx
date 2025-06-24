@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   Sheet,
   SheetContent,
@@ -19,9 +19,25 @@ import { cn } from "@/lib/utils";
 const MobileNav = () => {
   const [openMenu, setOpenMenu] = useState<null | string>(null);
   const pathname = usePathname();
+  const [isSticky, setSticky] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setSticky(window.scrollY > 10);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
-    <div className="fixed top-0 left-0 w-full h-20 bg-white">
+    <div
+      className={`fixed top-0 left-0 w-full h-20 z-30 transition-all duration-300 ${
+        isSticky
+          ? "bg-white shadow-sm backdrop-blur-md text-primary"
+          : "bg-transparent text-white"
+      }`}
+    >
       <div className="root-container flex items-center justify-between h-full">
         {/* HAMBURGER  */}
         <div className="relative">
@@ -301,13 +317,23 @@ const MobileNav = () => {
 
         <div>
           <Link href="/" className="flex items-center gap-1">
-            <Image
-              src="/icons/logo.svg"
-              alt="logo"
-              width={50}
-              height={50}
-              className="size-7"
-            />
+            {isSticky ? (
+              <Image
+                src="/icons/logo.svg"
+                alt="logo"
+                width={50}
+                height={50}
+                className="size-7"
+              />
+            ) : (
+              <Image
+                src="/icons/logo-white.svg"
+                alt="logo"
+                width={50}
+                height={50}
+                className="size-7"
+              />
+            )}
             {/* <span className="text-2xl font-manrope font-bold text-primary tracking-tight lowercase">
               indisis
             </span> */}
@@ -317,7 +343,7 @@ const MobileNav = () => {
         <div>
           {/* Language Selection  */}
           <div className="flex gap-4">
-            <Search className="cursor-pointer text-basecolor" />
+            <Search className="cursor-pointer" />
           </div>
         </div>
       </div>

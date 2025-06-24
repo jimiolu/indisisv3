@@ -254,3 +254,21 @@ export const Socials = [
     icon: "/icons/yt.svg",
   },
 ];
+
+export const BannerRating = [
+  {
+    id: 1,
+    title: "4.5 Stars",
+    desc: "Verified ratings on Trustpilot",
+  },
+  {
+    id: 2,
+    title: "+150%",
+    desc: "Customers Net Retention Rate",
+  },
+  {
+    id: 3,
+    title: "50%",
+    desc: "Faster project delivery with zero flaws",
+  },
+];

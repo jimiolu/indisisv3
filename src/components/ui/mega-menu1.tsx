@@ -18,8 +18,10 @@ const Megamenu1 = () => {
       className="relative group"
     >
       {/* Trigger  */}
-      <button className="cursor-pointer flex items-center py-2 transition-all duration-200 text-basecolor hover:border-b-2 hover:border-accent hover:text-accent">
-        <span className="font-manrope capitalize">Industries</span>
+      <button className="cursor-pointer flex items-center py-2 transition-all duration-200 hover:border-b-2 hover:border-accent hover:text-accent">
+        <span className="font-manrope capitalize text-sm font-semibold">
+          Industries
+        </span>
         {isOpen ? (
           <ChevronUp
             size={18}
@@ -38,7 +40,7 @@ const Megamenu1 = () => {
         className={`fixed top-[80px] left-0 w-full bg-white transition-all duration-500 ease-in-out overflow-hidden origin-top transform"
               ${
                 isOpen
-                  ? "translate-y-0 opacity-100 visible border-b-8 border-primary"
+                  ? "translate-y-0 opacity-100 visible"
                   : "scale-y-0 opacity-0 invisible"
               }`}
       >
