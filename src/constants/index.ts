@@ -272,3 +272,62 @@ export const BannerRating = [
     desc: "Faster project delivery with zero flaws",
   },
 ];
+
+export const CapabilitiesData = [
+  {
+    id: 1,
+    title: "Artificial Intelligence",
+    desc: "Transform your business with Indisis by embedding AI across every function driving innovation, empowerment, and impact",
+    url: "/services/artificial-intelligence",
+    image: "/bg/ai.jpg",
+  },
+  {
+    id: 2,
+    title: "Blockchain Serivces",
+    desc: "Empower your business with secure, transparent, and scalable blockchain solutions that unlock new value across ecosystems",
+    url: "/services/blockchain",
+    image: "/bg/block.jpg",
+  },
+  {
+    id: 3,
+    title: "Business Process Services",
+    desc: "Discover bold new strategies to lead, innovate, and disrupt your industry",
+    url: "/services/business-process",
+    image: "/bg/bs.jpg",
+  },
+  {
+    id: 4,
+    title: "Cloud and Infrastructure Services",
+    desc: "Empower your organization with a robust infrastructure and advanced technologies to drive agility, scalability, and innovation",
+    url: "/services/cloud",
+    image: "/bg/cloud.jpg",
+  },
+  {
+    id: 5,
+    title: "Digital Enterprise Applications",
+    desc: "Unlock a new standard of innovation, efficiency, and adaptability to future-proof your enterprise",
+    url: "/services/digital-applications",
+    image: "/bg/se.jpg",
+  },
+  {
+    id: 6,
+    title: "Engineering Services",
+    desc: "Enable seamless cyber-physical integration to gain enhanced operational visibility, real-time insights, and predictive capabilities",
+    url: "/services/engineering",
+    image: "/bg/eng.jpg",
+  },
+  {
+    id: 7,
+    title: "Experience Services",
+    desc: "Craft unforgettable customer experiences that resonate, inspire loyalty, and set your brand apart",
+    url: "/services/experience",
+    image: "/bg/exp.jpg",
+  },
+  {
+    id: 8,
+    title: "Testing Services",
+    desc: "Build and scale fully automated operations faster streamlining workflows, boosting productivity, and enhancing resilience",
+    url: "/services/testing",
+    image: "/bg/testing.jpg",
+  },
+];
