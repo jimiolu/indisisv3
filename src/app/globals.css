@@ -134,7 +134,7 @@
     @apply max-w-screen-2xl w-full;
   }
   .button {
-    @apply capitalize py-3 px-6 cursor-pointer bg-accent text-white hover:bg-accent/80;
+    @apply capitalize py-3 px-6 cursor-pointer bg-accent text-white hover:bg-accent/90;
   }
 
   .hover-effect {

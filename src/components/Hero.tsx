@@ -28,12 +28,12 @@ const Hero = () => {
               excellence at scale.
             </p>
             <div className="flex gap-5 items-center mt-10">
-              <Link href="/services">
+              <Link href="/what-we-do">
                 <button className="button hover-effect font-medium">
                   See what we do
                 </button>
               </Link>
-              <Link href="/services">
+              <Link href="/insights">
                 <button className="capitalize hover-effect hover:text-accent font-medium py-3">
                   Explore Insights
                 </button>

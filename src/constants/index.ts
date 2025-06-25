@@ -283,7 +283,7 @@ export const CapabilitiesData = [
   },
   {
     id: 2,
-    title: "Blockchain Serivces",
+    title: "Blockchain Services",
     desc: "Empower your business with secure, transparent, and scalable blockchain solutions that unlock new value across ecosystems",
     url: "/services/blockchain",
     image: "/bg/block.jpg",

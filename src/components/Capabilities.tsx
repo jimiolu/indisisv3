@@ -20,13 +20,13 @@ const Capabilities = () => {
   };
 
   return (
-    <section className="root-container py-20">
+    <section className="root-container py-32">
       <div className="space-y-10">
         <div className="flex flex-col lg:flex-row lg:justify-between gap-5 w-full text-basecolor">
-          <h1 className="text-2xl md:text-4xl font-semibold font-manrope">
+          <h1 className="text-2xl md:text-4xl font-bold font-manrope">
             Capabilities
           </h1>
-          <p className="max-w-xl text-sm md:text-base font-manrope">
+          <p className="max-w-xl text-sm md:text-base text-gray-600 font-manrope">
             We deliver a comprehensive suite of digital solutions and
             industry-leading platforms designed to drive measurable outcomes,
             elevate customer experiences, and enable large-scale transformation
